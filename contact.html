@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Contact </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Connect with Food</h1>
+        <h2>by Julianne Keijzer</h2>
+    </header>
+
+    <nav class="nav-bar">
+        <ul class="nav-container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="recipe.html">Gezond recept</a></li>
+            <li><a href="recipeform.html">Recept opsturen</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+</nav>
+
+    <main>
+        <div class="contact-main-intro">
+            <h1>Contact </h1>
+            <p>Heb je een vraag of wil je iets kwijt?<br>
+                Vul a.u.b. het onderstaande contactformulier in en er zal binnen
+                enkele werkdagen contact met je worden opgenomen.</p>
+        </div>
+
+        <div class="contact-main-form">
+            <form name="recipeform" method="POST" data-netlify="true">
+                <p class="contact-main-form-text">Aanhef:</p>
+                <div>
+                    <label class="contact-main-form-text" for="male">Dhr.</label>
+                    <input class="contact-gender-button-1" type="radio" name="salutation" id="male" value="male" />
+                </div>
+                <div>
+                    <label class="contact-main-form-text" for="female">Mevr.</label>
+                    <input class="contact-gender-button-2" type="radio" name="salutation" id="female" value="female" />
+                </div>
+                <div>
+                    <label class="contact-main-form-text" for="none">Geen</label>
+                    <input class="contact-gender-button-3" type="radio" name="salutation" id="none" value="none" />
+                </div>
+                <br>
+                <div>
+                    <div>
+                        <label class="contact-main-form-text" for="firstname">Voornaam:</label><br>
+                        <input class="contact-input" type="text" name="firstname" id="firstname" required />
+                    </div>
+                    <div>
+                        <label class="contact-main-form-text" for="lastname">Achternaam:</label><br>
+                        <input class="contact-input" type="text" name="lastname" id="lastname" required /><br>
+                    </div>
+                    <div>
+                        <label class="contact-main-form-text" for="email">E-mailadres:</label><br>
+                        <input class="contact-input" type="email" name="email" id="email" required /><br>
+                    </div>
+                </div>
+                <div>
+                    <label class="contact-main-form-text" for="message">Bericht:</label><br>
+                    <textarea class="contact-textarea" id="message" name="message" required></textarea>
+                </div>
+                <div>
+                    <button class="contact-button" type="submit">Verzenden</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Adres:<br>
+            Zelfverzonnenstraat 1<br>
+            1234 AB Delft<br>
+            06-12345678</p>
+    </footer>
+
+</body>
+
+</html>

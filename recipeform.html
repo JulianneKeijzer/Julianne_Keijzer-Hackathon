@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Recept opsturen </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Connect with Food</h1>
+        <h2>by Julianne Keijzer</h2>
+    </header>
+
+    <nav class="nav-bar">
+        <ul class="nav-container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="recipe.html">Gezond recept</a></li>
+            <li><a href="recipeform.html">Recept opsturen</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+</nav>
+
+    <main>
+        <div class="recipeform-main-intro">
+            <h1>Stuur jouw eigen gezonde recept op! </h1>
+            <p>Via onderstaand formulier kun je jouw gezonde recept met mij delen. Wie weet komt jouw recept dan ook op
+                deze website te staan!</p>
+        </div>
+
+        <div class="recipeform-main-form">
+            <form name="recipeform" method="POST" data-netlify="true">
+                <div>
+                    <p class="recipeform-main-form-text">Geslacht:</p>
+                    <div>
+                        <label class="recipeform-main-form-text" for="male">Man</label>
+                        <input class="recipeform-gender-button-1" type="radio" name="gender" id="male" value="male" />
+                    </div>
+                    <div>
+                        <label class="recipeform-main-form-text" for="female">Vrouw</label>
+                        <input class="recipeform-gender-button-2" type="radio" name="gender" id="female" value="female" />
+                    </div>
+                    <div>
+                        <label class="recipeform-main-form-text" for="other">Anders</label>
+                        <input class="recipeform-gender-button-3" type="radio" name="gender" id="other" value="other" />
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <div>
+                        <label class="recipeform-main-form-text" for="firstname">Voornaam:</label><br>
+                        <input class="recipeform-input" type="text" name="firstname" id="firstname" required />
+                    </div>
+                    <div>
+                        <label class="recipeform-main-form-text" for="lastname">Achternaam:</label><br>
+                        <input class="recipeform-input" type="text" name="lastname" id="lastname" required /><br>
+                    </div>
+                    <div>
+                        <label class="recipeform-main-form-text" for="email">E-mailadres:</label><br>
+                        <input class="recipeform-input" type="email" name="email" id="email" required /><br>
+                    </div>
+                    <div>
+                        <label class="recipeform-main-form-text" for="date">Geboortedatum:</label><br>
+                        <input class="recipeform-input" type="date" name="date" id="date" min="01-01-1901" /><br>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <div>
+                        <p class="recipeform-main-form-text">Tot welke keuken behoort jouw recept?:</p>
+                        <label class="recipeform-main-form-text" for="mediterian">Mediteraans</label>
+                        <input type="checkbox" name="mediterian" id="mediterian" />
+                    </div>
+                    <div>
+                        <label class="recipeform-main-form-text" for="french">Frans</label>
+                        <input type="checkbox" name="french" id="french" />
+                    </div>
+                    <div>
+                        <label class="recipeform-main-form-text" for="middle-eastern">Midden-Oosters</label>
+                        <input type="checkbox" name="middle-eastern" id="middle-eastern" />
+                    </div>
+                    <div>
+                        <label class="recipeform-main-form-text" for="dutch">Nederlands</label>
+                        <input type="checkbox" name="dutch" id="dutch" />
+                    </div>
+                    <div>
+                        <label class="recipeform-main-form-text" for="somethingelse">Anders namelijk:</label>
+                        <input type="checkbox" name="somethingelse" id="somethingelse" />
+                        <label for="textsomethingelse"></label><br>
+                        <textarea class="recipeform-textarea recipeform-textarea-1" id="textsomethingelse"
+                            name="textsomethingelse"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <label class="recipeform-main-form-text" for="info">Vertel iets meer over jouw recept:</label><br>
+                    <textarea class="recipeform-textarea recipeform-textarea-2" id="info" name="info"></textarea>
+                </div>
+                <div>
+                    <label class="recipeform-main-form-text" for="color">Welke kleur groente komt het meeste voor in jouw recept?:</label><br>
+                    <input class="recipeform-input recipeform-color" type="color" name="color" id="color" />
+                </div>
+                <hr />
+                <div>
+                    <label class="recipeform-main-form-text" for="file">Upload jouw recept via onderstaande knop:</label><br>
+                    <input id="file" type="file" name="file" required /><br>
+                </div>
+                <div>
+                    <button class="recipeform-button" type="submit">Verzenden</button>
+                    <button class="recipeform-button" type="reset">Alles wissen</button>
+                </div>
+                <figure>
+                    <img class="recipeform-img" src="recipeform-img.png">
+                </figure>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <a href="contact.html">
+            <p>Vragen?<br>
+                Klik hier om contact op te nemen</p>
+        </a>
+    </footer>
+</body>
+
+</html>
